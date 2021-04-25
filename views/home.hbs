@@ -1,0 +1,40 @@
+<div class="ui centered grid segment">
+    <div class="ui center aligned column sixteen wide">
+        <h1>{{title}}</h1>
+    </div>
+</div>
+
+<div class="ui centered grid">
+    <div class="two column row">
+        <div class="ui column seven wide segment">
+            <h3>Basic Functionality</h3>
+            <p>
+                This page is used to show some basic functionality for 
+                the node webserver. It includes this page and a monitoring 
+                page with some more extensive details about the instance 
+                this is running on. 
+            </p>
+        </div>
+
+        <div class="ui column one wide"></div>
+
+        <div class="ui column three wide segment">
+            <h3>Monitoring</h3>
+            <p>
+                Here are some very basic details about the instance and the 
+                server. For more info go to the <a href="/monitoring">Monitoring Page</a>.
+            </p>
+
+            <br>
+
+            <div class="ui list">
+                <item>
+                    <div class="content"><i class="server icon"></i> Instance Type: <b>{{type}}</b></div>
+                </item>
+                <item>
+                    <div class="content"><i class="envelope icon"></i> Public DNS: <b>{{dns}}</b></div>
+                </item>
+            </div>
+        </div>
+    </div>
+</div>

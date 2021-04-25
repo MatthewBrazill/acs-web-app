@@ -1,15 +1,59 @@
-<h1>{{title}}</h1>
+<div class="ui centered grid segment">
+    <div class="ui center aligned column sixteen wide">
+        <h1>{{title}}</h1>
+    </div>
+</div>
 
-<img src="{{img_link}}" alt="A small image to show the S3 bucket worked.">
+<div class="ui centered grid">
+    <div class="two column row">
+        <div class="ui column eleven wide segment">
+            <h3>Monitoring</h3>
+            <p>
+                This page displays the available monitoring data about 
+                this instance and the web app.
+            </p>
 
-<p>
-    This page is used to display some basic
-    information for the example page to show
-    that the basic webapp is working.
-</p>
+            <h4>Basic Information</h4>
+            <div class="ui list">
+                <item>
+                    <div class="content"><i class="id card icon"></i> Instance ID: <b>{{id}}</b></div>
+                </item>
+                <item>
+                    <div class="content"><i class="server icon"></i> Instance Type: <b>{{type}}</b></div>
+                </item>
+                <item>
+                    <div class="content"><i class="server icon"></i> Instance OS: <b>{{os}}</b></div>
+                </item>
+                <item>
+                    <div class="content"><i class="server icon"></i> Instance Up Time: <b>{{up_time}}</b> Hours</div>
+                </item>
+                <item>
+                    <div class="content"><i class="envelope icon"></i> Public DNS: <b>{{dns}}</b></div>
+                </item>
+                <item>
+                    <div class="content"><i class="map icon"></i> Instance Region: <b>{{region}}</b></div>
+                </item>
+                <item>
+                    <div class="content"><i class="map pin icon"></i> Availability Zone: <b>{{zone}}</b></div>
+                </item>
+            </div>
 
-<br>
+            <h4>Hardware Information</h4>
+            <div class="ui list">
+                <item>
+                    <div class="content"><i class="server icon"></i> Number of CPUs: <b>{{num_cpu}}</b></div>
+                </item>
+                <item>
+                    <div class="content"><i class="server icon"></i> Available Memory: <b>{{aval_mem}}</b> MB</div>
+                </item>
+                <item>
+                    <div class="content"><i class="server icon"></i> Free Memory: <b>{{free_mem}}</b> MB</div>
+                </item>
+            </div>
 
-<p>{{instance_id}}</p>
-<p>{{instance_type}}</p>
-<p>{{public_ip}}</p>
+            <p>
+                Click here to go <a href="/home">Home</a>.
+            </p>
+        </div>
+    </div>
+</div>
