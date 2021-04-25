@@ -16,4 +16,4 @@ app.use(express.urlencoded({extended: false}));
 app.set(`views`, `${__dirname}/views`)
 app.set(`view engine`, `.hbs`);
 app.use(`/`, routes);
-app.listen(8000, "localhost");
+app.listen(80);
